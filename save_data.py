@@ -9,10 +9,10 @@ tf.config.experimental.set_memory_growth(physical_devices[0],True)
 from detect_face import face_extract,load_dataset
 
 print('processing training - data')
-x_train, y_train = load_dataset('5-celebrity-faces-dataset/train/',(160,160))
+x_train, y_train = load_dataset('dataset/train/',(160,160))
 
 print('processing validation - data')
-x_val, y_val = load_dataset('5-celebrity-faces-dataset/val/',(160,160))
+x_val, y_val = load_dataset('dataset/val/',(160,160))
 
 
 with open('data.pkl', 'wb') as f:
